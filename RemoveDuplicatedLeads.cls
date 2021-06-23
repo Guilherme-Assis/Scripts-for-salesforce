@@ -3,7 +3,7 @@
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
  * @last modified on  : 06-23-2021
- * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+ * @last modified by  : Guilherme Assis
  * Modifications Log 
  * Ver   Date         Author                               Modification
  * 1.0   06-23-2021   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
@@ -11,10 +11,10 @@
 
 //Remove duplicated leads
 
-Savepoint sp = Database.setSavepoint();
+Savepoint sp = Database.setSavepoint();  
 
 try 
-{
+{ 
     List<AggregateResult> lar = [SELECT MIN(Id) MinId, CPF__c FROM Lead GROUP BY CPF__c HAVING COUNT(Id) > 1 LIMIT 2000];
 
     if (lar.size() <= 0)
