@@ -81,8 +81,8 @@ global with sharing class MeuServicoRest {
 }
 ```
 
-2. Configurar Permissões
-2.1 Perfil de Usuário
+2. Configurar Permissões \
+2.1 Perfil de Usuário \
 Vá para Configuração > Gerenciamento de Usuários > Perfis.
 Selecione o perfil desejado.
 Em "Autorização da Classe Apex", adicione permissões para a classe MeuServicoRest.
