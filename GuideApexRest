@@ -1,0 +1,47 @@
+@RestResource(urlMapping='/meuRecurso/*')
+global with sharing class MeuServicoRest {
+    
+    // Método HTTP GET
+    @HttpGet
+    global static String doGet() {
+        RestRequest req = RestContext.request;
+        RestResponse res = RestContext.response;
+        
+        String param = req.requestURI.substring(req.requestURI.lastIndexOf('/')+1);
+        
+        res.responseBody = Blob.valueOf('Requisição GET recebida. Parâmetro: ' + param);
+        return null;
+    }
+
+    // Método HTTP POST
+    @HttpPost
+    global static String doPost(String nome) {
+        RestRequest req = RestContext.request;
+        RestResponse res = RestContext.response;
+        
+        res.responseBody = Blob.valueOf('Requisição POST recebida. Nome: ' + nome);
+        return null;
+    }
+
+    // Método HTTP PUT
+    @HttpPut
+    global static String doPut(String id, String nome) {
+        RestRequest req = RestContext.request;
+        RestResponse res = RestContext.response;
+        
+        res.responseBody = Blob.valueOf('Requisição PUT recebida. ID: ' + id + ', Nome: ' + nome);
+        return null;
+    }
+
+    // Método HTTP DELETE
+    @HttpDelete
+    global static String doDelete() {
+        RestRequest req = RestContext.request;
+        RestResponse res = RestContext.response;
+        
+        String param = req.requestURI.substring(req.requestURI.lastIndexOf('/')+1);
+        
+        res.responseBody = Blob.valueOf('Requisição DELETE recebida. Parâmetro: ' + param);
+        return null;
+    }
+}
