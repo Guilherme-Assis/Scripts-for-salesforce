@@ -79,6 +79,7 @@ global with sharing class MeuServicoRest {
         return null;
     }
 }
+```
 
 2. Configurar Permissões
 2.1 Perfil de Usuário
