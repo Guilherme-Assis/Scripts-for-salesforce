@@ -112,19 +112,19 @@ GET Request:
 URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/123 \
 Método: GET \
 Resposta esperada: Requisição GET recebida. Parâmetro: 123 \
-POST Request: \
+POST Request: 
 
 URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/ \
 Método: POST 
 Body: { "nome": "John Doe" } \
 Resposta esperada: Requisição POST recebida. Nome: John Doe \
-PUT Request: \
+PUT Request: 
 
 URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/ \
 Método: PUT 
 Body: { "id": "123", "nome": "Jane Doe" } \
 Resposta esperada: Requisição PUT recebida. ID: 123, Nome: Jane Doe \
-DELETE Request: \
+DELETE Request: 
 
 URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/123 \
 Método: DELETE 
