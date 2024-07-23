@@ -107,7 +107,7 @@ Criar uma API RESTful em Salesforce com Apex é uma maneira poderosa de expor fu
 
 Exemplo Completo de Teste \
 Testando com Postman \
-GET Request: \
+GET Request: 
 
 URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/123 \
 Método: GET \
@@ -115,18 +115,18 @@ Resposta esperada: Requisição GET recebida. Parâmetro: 123 \
 POST Request: \
 
 URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/ \
-Método: POST \
+Método: POST 
 Body: { "nome": "John Doe" } \
 Resposta esperada: Requisição POST recebida. Nome: John Doe \
 PUT Request: \
 
 URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/ \
-Método: PUT \
+Método: PUT 
 Body: { "id": "123", "nome": "Jane Doe" } \
 Resposta esperada: Requisição PUT recebida. ID: 123, Nome: Jane Doe \
 DELETE Request: \
 
 URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/123 \
-Método: DELETE \
+Método: DELETE 
 Resposta esperada: Requisição DELETE recebida. Parâmetro: 123 \
 Lembre-se de configurar o cabeçalho de autenticação no Postman com um token de acesso válido. \
