@@ -95,38 +95,38 @@ Use ferramentas como Postman ou cURL para testar seus endpoints. Por exemplo, pa
 
 sh
 Copy code
-curl -X GET https://[your-salesforce-instance]/services/apexrest/meuRecurso/123
-Substitua [your-salesforce-instance] pela sua instância do Salesforce, como na1.salesforce.com.
+curl -X GET https://[your-salesforce-instance]/services/apexrest/meuRecurso/123 \
+Substitua [your-salesforce-instance] pela sua instância do Salesforce, como na1.salesforce.com. \
 
-Dicas Adicionais
-Manipulação de Erros: Adicione tratamento de erros adequado para retornar mensagens de erro claras.
-Autenticação: Use OAuth para autenticação segura de suas APIs.
-Documentação: Documente sua API para facilitar o uso por outros desenvolvedores.
-Considerações Finais
-Criar uma API RESTful em Salesforce com Apex é uma maneira poderosa de expor funcionalidades de sua organização Salesforce para integração com outros sistemas. Siga as melhores práticas de segurança e documentação para garantir que sua API seja robusta e fácil de usar.
+Dicas Adicionais \
+Manipulação de Erros: Adicione tratamento de erros adequado para retornar mensagens de erro claras. \
+Autenticação: Use OAuth para autenticação segura de suas APIs. \
+Documentação: Documente sua API para facilitar o uso por outros desenvolvedores. \
+Considerações Finais \
+Criar uma API RESTful em Salesforce com Apex é uma maneira poderosa de expor funcionalidades de sua organização Salesforce para integração com outros sistemas. Siga as melhores práticas de segurança e documentação para garantir que sua API seja robusta e fácil de usar. \
 
-Exemplo Completo de Teste
-Testando com Postman
-GET Request:
+Exemplo Completo de Teste \
+Testando com Postman \
+GET Request: \
 
-URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/123
-Método: GET
-Resposta esperada: Requisição GET recebida. Parâmetro: 123
-POST Request:
+URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/123 \
+Método: GET \
+Resposta esperada: Requisição GET recebida. Parâmetro: 123 \
+POST Request: \
 
-URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/
-Método: POST
-Body: { "nome": "John Doe" }
-Resposta esperada: Requisição POST recebida. Nome: John Doe
-PUT Request:
+URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/ \
+Método: POST \
+Body: { "nome": "John Doe" } \
+Resposta esperada: Requisição POST recebida. Nome: John Doe \
+PUT Request: \
 
-URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/
-Método: PUT
-Body: { "id": "123", "nome": "Jane Doe" }
-Resposta esperada: Requisição PUT recebida. ID: 123, Nome: Jane Doe
-DELETE Request:
+URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/ \
+Método: PUT \
+Body: { "id": "123", "nome": "Jane Doe" } \
+Resposta esperada: Requisição PUT recebida. ID: 123, Nome: Jane Doe \
+DELETE Request: \
 
-URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/123
-Método: DELETE
-Resposta esperada: Requisição DELETE recebida. Parâmetro: 123
-Lembre-se de configurar o cabeçalho de autenticação no Postman com um token de acesso válido.
+URL: https://[your-salesforce-instance]/services/apexrest/meuRecurso/123 \
+Método: DELETE \
+Resposta esperada: Requisição DELETE recebida. Parâmetro: 123 \
+Lembre-se de configurar o cabeçalho de autenticação no Postman com um token de acesso válido. \
