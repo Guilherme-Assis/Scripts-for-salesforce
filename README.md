@@ -83,15 +83,15 @@ global with sharing class MeuServicoRest {
 
 2. Configurar Permissões \
 2.1 Perfil de Usuário \
-Vá para Configuração > Gerenciamento de Usuários > Perfis.
-Selecione o perfil desejado.
-Em "Autorização da Classe Apex", adicione permissões para a classe MeuServicoRest.
-2.2 Sites
-Vá para Configuração > Desenvolvedor > Sites.
-Crie um novo site e configure a URL conforme necessário.
-Configure as permissões do site para permitir acesso à classe Apex.
-3. Testar a API
-Use ferramentas como Postman ou cURL para testar seus endpoints. Por exemplo, para testar o método GET:
+Vá para Configuração > Gerenciamento de Usuários > Perfis. \
+Selecione o perfil desejado. \
+Em "Autorização da Classe Apex", adicione permissões para a classe MeuServicoRest. \
+2.2 Sites \
+Vá para Configuração > Desenvolvedor > Sites. \
+Crie um novo site e configure a URL conforme necessário.\
+Configure as permissões do site para permitir acesso à classe Apex.\
+3. Testar a API\
+Use ferramentas como Postman ou cURL para testar seus endpoints. Por exemplo, para testar o método GET:\
 
 sh
 Copy code
